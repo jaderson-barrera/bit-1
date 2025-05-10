@@ -1,29 +1,41 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap");
 
 /* universal */
 *,
-*::before
-*::after{
-  box-sizing:border-box;
+*::before *::after {
+  box-sizing: border-box;
 }
 
-html, body{
-  height: 100%;
+html,body{
+  height:100%;
 }
+
+.fontWhite{
+  background-color:white;
+}
+
+.colorBlack{
+  color: black;
+}
+
+
 
 
 /* class */
 
+.a, .redes{
+  color: white;
+}
 
-.nav {
+.nav{
   margin: 15px;
   flex-direction: column;
   align-content: center;
 }
 
-.menu, .foot {
+.menu,.foot{
   margin: 10px;
 }
 
@@ -45,27 +57,55 @@ html, body{
   cursor: pointer;
 }
 
+/* news class */
 
+
+.slider {
+  aspect-ratio: 10/16;
+  width: 300px;
+  position: relative;
+  display: flex;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.sliderImg {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: sticky;
+  object-fit: cover;
+  border-radius: 5px;
+  scroll-snap-align: center;
+}
+
+.mainSlider {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
 
 /* union */
 main,
 footer,
-p {
-    font-family: "Arapey", serif;
-  font-size: 14px;
-  
+p{
+  font-family:"Arapey", serif;
+  font-size:14px;
 }
 
 /* body */
-body{
-  background-color: black;
-  color: white;
+body {
+  background-color:black;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-header{
+header {
+  color: white;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -75,28 +115,26 @@ header{
 }
 
 h1{
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-
-  padding: 4px;
-  font-size: 2rem;
-  background-color: red;
-  color: white;
+  font-family:"Ubuntu", sans-serif;
+  font-weight:600;
+  font-style:italic;
+  padding:4px;
+  font-size:2rem;
+  background-color:red;
 }
 
-a{
+a{ 
   color: white;
   text-decoration: none;
   letter-spacing: 2px;
 }
 
-
-footer{
+footer {
   display: flex;
   flex-direction: row;
   align-content: flex-end;
   justify-content: center;
   margin-top: auto;
-}
-
+  
+ }
+ 
