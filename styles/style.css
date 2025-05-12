@@ -217,6 +217,7 @@ place-items:center
  
 @media screen and (max-width: 576px) {
   .headerNews{
+    padding-top: 20%;
     margin-top: 90%;
   }
   .mainSlider{
