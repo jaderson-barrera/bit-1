@@ -4,7 +4,7 @@ las personas se pueden registrar o suscribirse para recibir informacion de las p
 
 Se utilizo el aprendizaje que solamente requeri para llevar a cabo esta pagina web para asi no dañar la estetica
 
-# wareframe
+# wireframe
 ![capura figma](figma.png)
 
 ## Autor
